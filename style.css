@@ -1,0 +1,82 @@
+body{
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: Outfit,sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover{
+    color:  hsl(178, 100%, 50%);
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    background: hsl(216, 50%, 16%);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 375px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
+}
+.block__img img{
+    border-radius: 5px;
+    margin: 0 auto 10px auto ;
+    width: 100%;
+}
+.view-icon{
+    display: none;
+}
+.block__img{
+    position: relative;
+}
+.block__img:hover .view-icon{
+    display: inherit;
+    position: absolute;
+    width: 50px;
+    top:40%;
+    left: 44%;
+}
+.block__title{
+    margin: 0 0 10px 0;
+}
+.block__text{
+    color: hsl(215, 32%, 27%);
+    margin: 0 0 10px 0;
+    flex: 1 1 auto;
+}
+.items-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.item-first{
+    background: url("icon-ethereum.svg") 0 1px no-repeat;
+    padding-left: 16px;
+    color: hsl(178, 100%, 50%);
+}
+.item-second{
+    color: hsl(215, 32%, 27%);
+    background: url("icon-clock.svg") 0 1px no-repeat;
+    padding-left: 20px;
+}
+.block__footer{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    padding-top: 10px;
+}
+.img-footer{
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+.item-footer{
+    padding-left: 10px;
+    color: hsl(215, 32%, 27%);
+}
